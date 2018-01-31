@@ -38,9 +38,9 @@ def linreg(X,Y):
 
 
 
-#X = np.random.rand(100)
-#Y = np.random.rand(100)
-#linreg(X,Y)
+X = np.random.rand(100)
+Y = np.random.rand(100)
+linreg(X,Y)
 
 stockA = ts.get_hist_data(MAYINGLONG_CODE,'2017-07-17','2018-01-17')['close']
 stockSH = ts.get_hist_data('sh','2017-07-17','2018-01-17')['close']
