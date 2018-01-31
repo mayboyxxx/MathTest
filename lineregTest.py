@@ -47,7 +47,7 @@ stockSH = ts.get_hist_data('sh','2017-07-17','2018-01-17')['close']
 r_stockA = stockA.pct_change()[1:]
 r_stockSH = stockSH.pct_change()[1:]
 
-#linreg(r_stockSH.values,r_stockA.values)
+linreg(r_stockSH.values,r_stockA.values)
 
 seaborn.regplot(r_stockSH.values,r_stockA.values)
 plt.show()
